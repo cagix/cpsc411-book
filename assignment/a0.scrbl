@@ -30,6 +30,8 @@ You should have a git repository created for you at @url{https://github.students
 @item{Ensure @exec{nasm} is callable from Racket.}
 @item{Compile and execute fact.s from the command line.}
 @item{Compile and execute fact.s from Racket.}
+@item{Test submission process.}
+@item{Install and test @tt{cpsc411-lib}.}
 ]
 
 @section{Language Diagram}
@@ -90,12 +92,12 @@ which has the correct version of @exec{nasm} and @exec{racket}.
 You can connect via SSH using the username setup at
 @url{https://www.cs.ubc.ca/getacct/}.
 
-The remote machines have Racket 8.5 and 8.7 installed; I recommend 8.7.
-To access the v8.7 Racket, add @tt{/cs/local/lib/pkg/racket-8.7/bin/} to your path.
+The remote machines have Racket 8.10 installed.
+To access the v8.10 Racket, add @tt{/cs/local/lib/pkg/racket-8.10/bin/} to your path.
 Remember that you must prepend this to the path, in order for this version to
 take precedence.
 For example, type this in a shell or add it to your @tt{.bash_profile}:
-@tt{export PATH="/cs/local/lib/pkg/racket-8.7/bin/:$PATH"}.
+@tt{export PATH="/cs/local/lib/pkg/racket-8.10/bin/:$PATH"}.
 
 If you want a local development environment, you can use the @tt{Dockerfile}
 found in your git repository to setup a development container that mirrors
@@ -118,7 +120,7 @@ First, let's ensure Racket is installed properly and the right version.
 You will need @exec{racket} version 8.3 or higher.
 
 @exercise{Run @exec{racket --version}, and check that a message like "Welcome to
-Racket v8.7" is printed, and that the version is at least "v8.3".
+Racket v8.10" is printed, and that the version is at least "v8.3".
 }
 
 Next, we'll test @exec{nasm}. We need @exec{nasm} version 2.13 or higher.
@@ -203,6 +205,13 @@ Regardless of whether you submit or not, we'll automatically submit your final
 commit prior to the deadline from the @tt{assignment-0} branch.
 You are not required to submit manually, and submitting manually does not affect
 which commit we grade.
+}
+
+@exercise{
+Future assignments rely on the @racketmodname[cpsc411] package.
+To make sure this is installed, run @tt{raco pkg install --user --auto https://github.com/cpsc411/cpsc411-pub.git?path=cpsc411-lib#2024w2}.
+To check this is installed correctly, run @tt{raco test -p cpsc411-lib}.
+You should see a lot of files run, followed by @tt{25 tests passed}.
 }
 
 @section{x64 References}
