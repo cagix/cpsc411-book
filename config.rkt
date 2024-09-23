@@ -7,8 +7,8 @@
 (provide (all-defined-out))
 
 (define course-number "CPSC 411")
-(define semester "2022w2")
-(define gh-org "cpsc411-2022w-t2")
+(define semester "2024w2")
+(define gh-org "cpsc411-2024w-t2")
 (define course-title "Introduction to Compiler Construction")
 
 (define url-root (string-append "https://www.students.cs.ubc.ca/~cs-411/" semester))
