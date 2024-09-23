@@ -601,6 +601,8 @@ You might find it interesting to read Dr. Tamara Munzner's
 Things I Never Want To Hear Again."]
 
 Plagiarism means passing of someone else's work as your own.
+This incldues code from other students, "tutors", StackOverflow, Reddit,
+Discord, generative AI tools, etc.
 Plagiarism is a serious offense and dealt with quite harshly by the university.
 Cases are forwarded to the Dean's office and can result in suspension from the
 university as well as an entry on your academic transcript.
@@ -645,6 +647,7 @@ Any failure to do so will be considered academic misconduct. Forgetfulness is
 not an excuse.
 
 It is also consider academic misconduct to share your own code outside your
-group.
+group, and a violation of copyright to share any code that contains code
+written by course staff.
 Do not share your solutions, either privately or by making them publically
 accessible on code sharing websites such as GitHub.
