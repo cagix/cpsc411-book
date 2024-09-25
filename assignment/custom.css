@@ -43,3 +43,13 @@ code {
     text-decoration-style: dotted;
 }
 */
+
+/* Customizations for exercise */
+.boxed p {
+  margin: 0 0 0 0;
+}
+
+blockquote.boxed {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
