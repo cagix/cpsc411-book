@@ -25,7 +25,7 @@ You should have a git repository created for you at @url{https://github.students
   @item{Setup a 64-bit Linux (virtual) machine for local development}
   ]
 }
-@item{Ensure @exec{racket} >= 8.3 is installed.}
+@item{Ensure @exec{racket} >= 8.15 is installed.}
 @item{Ensure @exec{nasm} >= 2.13 is installed.}
 @item{Ensure @exec{nasm} is callable from Racket.}
 @item{Compile and execute fact.s from the command line.}
@@ -92,12 +92,12 @@ which has the correct version of @exec{nasm} and @exec{racket}.
 You can connect via SSH using the username setup at
 @url{https://www.cs.ubc.ca/getacct/}.
 
-The remote machines have Racket 8.10 installed.
-To access the v8.10 Racket, add @tt{/cs/local/lib/pkg/racket-8.10/bin/} to your path.
+The remote machines have Racket 8.15 installed.
+To access the v8.15 Racket, add @tt{/home/c/cs-411/racket-v8-15/bin} to your path.
 Remember that you must prepend this to the path, in order for this version to
 take precedence.
 For example, type this in a shell or add it to your @tt{.bash_profile}:
-@tt{export PATH="/cs/local/lib/pkg/racket-8.10/bin/:$PATH"}.
+@tt{export PATH="/home/c/cs-411/racket-v8-15/bin:$PATH"}.
 
 If you want a local development environment, you can use the @tt{Dockerfile}
 found in your git repository to setup a development container that mirrors
@@ -117,10 +117,10 @@ Whichever you choose, the following exercises will make sure your machine is
 setup and working properly.
 
 First, let's ensure Racket is installed properly and the right version.
-You will need @exec{racket} version 8.3 or higher.
+You will need @exec{racket} version 8.15 or higher.
 
 @exercise{Run @exec{racket --version}, and check that a message like "Welcome to
-Racket v8.10" is printed, and that the version is at least "v8.3".
+Racket v8.15" is printed, and that the version is at least "v8.15".
 }
 
 Next, we'll test @exec{nasm}. We need @exec{nasm} version 2.13 or higher.
