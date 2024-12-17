@@ -129,7 +129,7 @@ Next, we'll test @exec{nasm}. We need @exec{nasm} version 2.13 or higher.
 version 2.14.02" is printed and that the version is at least "2.13".
 }
 
-We also need to be sure @exec{racket} can find @racket{nasm}.
+We also need to be sure @exec{racket} can find @exec{nasm}.
 
 @exercise{Run
 @exec{racket -e "(with-output-to-string (thunk (system \"nasm --version\")))"},
