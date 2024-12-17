@@ -22,12 +22,12 @@
     ("base" #:version "7.4")
     "racket-doc"
     ;"cpsc411-doc"
-    "https://github.com/cpsc411/cpsc411-pub.git?path=cpsc411-doc#2022w2"
+    "https://github.com/cpsc411/cpsc411-pub.git?path=cpsc411-doc#2024w2"
     ;"cpsc411-lib"
-    "https://github.com/cpsc411/cpsc411-pub.git?path=cpsc411-lib#2022w2"
+    "https://github.com/cpsc411/cpsc411-pub.git?path=cpsc411-lib#2024w2"
     "cpsc411-reference-lib"
     ; must be installed manually
-    ;"https://github.com/cpsc411/cpsc411-priv.git?path=cpsc411-reference-lib#2022w2"
+    ;"https://github.com/cpsc411/cpsc411-priv.git?path=cpsc411-reference-lib#2024w2"
     "racket-graphviz"
     ("scribble-bettergrammar-lib" #:version "1.6.4")))
 (define scribblings '(("index.scrbl" (multi-page no-search))))
