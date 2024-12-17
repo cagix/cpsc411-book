@@ -241,12 +241,16 @@ expect any credit for submitting it.
 
 
 @subsection{Exams}
-There will be a final that focus on the concepts covered in lecture and in
+There will be a in-person final exam that focus on the concepts covered in lecture and in
 milestones.
 The structure of the exam may be different than the milestones.
 While the milestones focus on implementing a compiler, the exams will test you
 on the concepts and design elements that are discussed in lecture and are
 implicit in the milestones.
+
+If you miss the final exam, you have two options.
+You can either take the exam the next time the course is offered, or schedule
+an @bold{in-person oral exam} with the instructors.
 
 @subsection{Reading}
 All the design and implementation lessons are found in the (free, online) book
