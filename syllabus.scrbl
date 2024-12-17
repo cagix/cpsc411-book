@@ -457,21 +457,20 @@ At the end of the semester, your entire compiler will be thoroughly tested and
 hand-graded for design elements.
 This will constitute the entire project grade.
 
-@margin-note{This was changed in 2022w2 from 7 require to to only 6 required.}
-You are required to complete the first 6 milestones to pass the course project,
-but you may choose to stop any time after completing milestone 6.
+You are required to complete the first 7 milestones to pass the course project,
+but you may choose to stop any time after completing milestone 7.
 Your maximum grade on the project will be 10% for each milestone you choose to
 complete; however, you will receive a bonus 10% on your project grade if your
 milestone is perfect according to our rubric---it passes all of our tests
 (including private tests), and the code is well designed.
 The final 10% is all or nothing.
-This means if you complete milestone 6 perfectly, you will receive an 80% on the
-project; if you complete milestone 6 almost perfectly, you get approximately
+This means if you complete milestone 7 perfectly, you will receive an 80% on the
+project; if you complete milestone 7 almost perfectly, you get approximately
 70%.
-If you complete milestone 7 perfectly, you will receive 90% on the project, but
-80% or less for an imperfect milestone 7.
-If you complete milestone 9 pefectly, you will receive 110% on the project, but
-100% or less for an imperfect milestone 9.
+If you complete milestone 8 perfectly, you will receive 90% on the project, but
+80% or less for an imperfect milestone 8.
+If you complete milestone 10 pefectly, you will receive 110% on the project, but
+100% or less for an imperfect milestone 10.
 
 By the end of the course, you must declare which milestone you intend to be your
 final milestone.
