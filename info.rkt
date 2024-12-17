@@ -2,7 +2,7 @@
 ;(define collection "cpsc411-book")
 (define deps '("at-exp-lib"
                ;"cpsc411-lib"
-               "https://github.com/cpsc411/cpsc411-pub.git?path=cpsc411-lib#2022w2"
+               "https://github.com/cpsc411/cpsc411-pub.git?path=cpsc411-lib#2024w2"
                "gregor-lib"
                "memoize-lib"
                "racket-graphviz"
