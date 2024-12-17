@@ -416,8 +416,8 @@ The following is a tentative grading scheme for the course, although it is
 subject to change at the instructor's discretion.
 
 @itemlist[
-@item{Project -- 70%}
-@item{Final -- 30%}
+@item{Project -- 60%}
+@item{Final -- 40%}
 ]
 
 You must pass both the project and the final to pass the course.
