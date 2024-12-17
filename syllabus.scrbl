@@ -39,17 +39,7 @@ some simple imperative programming in assembly.
 ]
 
 @section{Prerequisites}
-This semester, the CPSC 311 prerequisite has been waived.
-As a result, the course will not assume background in programming languages and
-implementation of interpreters, and will move somewhat slower as a result.
-We will cover some of the necessary 311 background as it comes up in the course.
-@;A passing grade in CPSC 311.
-
-I've left the description of what is normally expected as background for the
-course, as students have contacted me worried about the lack of 311.
-However, I will not expect students to have the normal background acquired in
-311, and will be adjusting the 411 material and timeline.
-
+A passing grade in CPSC 311.
 
 @;{
 @subsection{What if I want to take it but can't fulfill the prerequisites?}
@@ -589,7 +579,7 @@ You might find it interesting to read Dr. Tamara Munzner's
 Things I Never Want To Hear Again."]
 
 Plagiarism means passing of someone else's work as your own.
-This incldues code from other students, "tutors", StackOverflow, Reddit,
+This includes code from other students, "tutors", StackOverflow, Reddit,
 Discord, generative AI tools, etc.
 Plagiarism is a serious offense and dealt with quite harshly by the university.
 Cases are forwarded to the Dean's office and can result in suspension from the
