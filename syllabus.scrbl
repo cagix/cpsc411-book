@@ -163,18 +163,6 @@ No textbook is required.
 Weekly lecture notes will be posted, and additional reading from a freely
 available electronic textbook may be suggested.
 
-There is also an optional weekly 1 hour tutorial on Racket basics and
-introductory programming languages topics, which may be useful for students who
-were unable to take CPSC 311.
-@tabular[
-#:style 'boxed
-#:column-properties '(center)
-#:row-properties '(bottom-border)
-(list
-(list @bold{Instructor} @bold{Office} @bold{Hour})
-(list "Paulette Koronkevich" "ICCS 238" "F 13:00--14:00"))
-]
-
 @(define (mailto addr)
    (hyperlink (format "mailto:~a" addr) addr))
 
@@ -185,7 +173,8 @@ were unable to take CPSC 311.
 #:row-properties '(bottom-border)
 (list
   (list @bold{Instructor} @bold{Contact Details} @bold{Office} @bold{Office Hours})
-  (list "Prof. William J. Bowman" @mailto["wilbowma@cs.ubc.ca"] "ICCS 389" "Tue/Thu 15:30--16:30"))
+  (list "Prof. William J. Bowman" @mailto["wilbowma@cs.ubc.ca"] "ICCS 389" "TBD")
+  (list "Prof. Paulette Koronkevich" @mailto["pletrec@cs.ubc.ca"] "TBD" "TBD"))
 ]
 
 @tabular[
@@ -194,9 +183,9 @@ were unable to take CPSC 311.
 #:row-properties '(bottom-border)
 (list
 (list @bold{TA} @bold{Contact Details} @bold{Office} @bold{Office Hours})
-(list "Paulette Koronkevich" "pletrec@cs.ubc.ca" "ICCS 306 (W); ICCS 238 (F)" "W 11:00--12:00; F 14:00--15:00")
-(list "Lily Bryant" "labryant@cs.ubc.ca" "ICCS 204 (M); ICCS 306 (Thu)" "M 13:00--14:00; R 11:30--12:30")
-(list "Adam Geller" "atgeller@cs.ubc.ca" "ICCS 306 (Tue); ICCS 204 (W)" "Tue 10:00--11:00; W 14:30--15:30")
+(list "Sepehr Noorafshan" "snoora@cs.ubc.ca" "TBD" "TBD")
+(list "Jasper Geer" "jgeer35@cs.ubc.ca" "TBD" "TBD")
+(list "Justice Sefas" "jsefas@cs.ubc.ca" "TBD" "TBD")
 )
 ]
 
