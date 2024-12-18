@@ -173,9 +173,9 @@ available electronic textbook may be suggested.
 #:row-properties '(bottom-border)
 (list
 (list @bold{TA} @bold{Contact Details} @bold{Office} @bold{Office Hours})
-(list "Sepehr Noorafshan" "snoora@cs.ubc.ca" "TBD" "TBD")
-(list "Jasper Geer" "jgeer35@cs.ubc.ca" "TBD" "TBD")
-(list "Justice Sefas" "jsefas@cs.ubc.ca" "TBD" "TBD")
+(list "Sepehr Noorafshan" "snoora@cs.ubc.ca" "TBD" "Mon 13:00--14:00; Thur 11:00--12:00")
+(list "Jasper Geer" "jgeer35@cs.ubc.ca" "TBD" "Wed 14:30--15:30; Fri 14:00--15:00")
+(list "Justice Sefas" "jsefas@cs.ubc.ca" "TBD" "Tue 10:00--11:00; Wed 11:00--12:00")
 )
 ]
 
