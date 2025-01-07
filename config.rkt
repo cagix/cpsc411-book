@@ -2,11 +2,12 @@
 
 (require
  gregor
- (only-in scribble/manual emph))
+ (only-in scribble/manual emph url))
 
 (provide (all-defined-out))
 
 (define course-number "CPSC 411")
+(define lecture-room (list "CEME 1202 -- " (url "https://learningspaces.ubc.ca/classrooms/ceme-1202")))
 (define semester "2024w2")
 (define gh-org "cpsc411-2024w-t2")
 (define course-title "Introduction to Compiler Construction")

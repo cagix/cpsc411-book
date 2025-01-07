@@ -35,7 +35,9 @@ some simple imperative programming in assembly.
 #:column-properties '(left left)
 (list
   (list @bold{Course Title} course-title)
-  (list @bold{Course Number} course-number))
+  (list @bold{Course Number} course-number)
+  (list @bold{Lecture Location} lecture-room)
+)
 ]
 
 @section{Prerequisites}
