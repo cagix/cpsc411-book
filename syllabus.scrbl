@@ -170,7 +170,7 @@ available electronic textbook may be suggested.
 (list
   (list @bold{Instructor} @bold{Contact Details} @bold{Office} @bold{Office Hours})
   (list "Prof. William J. Bowman" @mailto["wilbowma@cs.ubc.ca"] "ICCS 389" "Tue 15:30-16:30")
-  (list "Prof. Paulette Koronkevich" @mailto["pletrec@cs.ubc.ca"] "TBD" "Thu 15:30-16:30"))
+  (list "Prof. Paulette Koronkevich" @mailto["pletrec@cs.ubc.ca"] "ICICS 306" "Thu 15:30-16:30"))
 ]
 
 @tabular[
@@ -179,9 +179,9 @@ available electronic textbook may be suggested.
 #:row-properties '(bottom-border)
 (list
 (list @bold{TA} @bold{Contact Details} @bold{Office} @bold{Office Hours})
-(list "Sepehr Noorafshan" "snoora@cs.ubc.ca" "TBD" "Mon 13:00--14:00; Thu 11:00--12:00")
-(list "Jasper Geer" "jgeer35@cs.ubc.ca" "TBD" "Wed 14:30--15:30; Fri 14:00--15:00")
-(list "Justice Sefas" "jsefas@cs.ubc.ca" "TBD" "Tue 10:00--11:00; Wed 11:00--12:00")
+(list "Sepehr Noorafshan" "snoora@cs.ubc.ca" "ICICS 306" "Mon 13:00--14:00; Thu 11:00--12:00")
+(list "Jasper Geer" "jgeer35@cs.ubc.ca" "ICICS 306" "Wed 14:30--15:30; Fri 14:00--15:00")
+(list "Justice Sefas" "jsefas@cs.ubc.ca" "ICICS 304" "Tue 10:00--11:00; Wed 11:00--12:00")
 )
 ]
 
