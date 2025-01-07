@@ -418,7 +418,7 @@ subject to change at the instructor's discretion.
 
 You must pass both the project and the final to pass the course.
 
-@subsection{Late Policy}
+@subsection{Deadlines and Late Policy}
 The entire project must be handed in by the project due date at the end of the
 semester; there will be no extensions.
 If you have a local commit that was before the deadline, but you forgot to push
@@ -435,26 +435,31 @@ you have a plan to get your project back on track.
 If you miss a milestone deadline, you receive no feedback, and it does not
 directly impact your grade.
 
+At every milestone deadline, you are required to submit a milestone reflection.
+The reflection will include what you worked on for that milestone (even if the answer is "nothing"), and a declaration of how your group collaborated.
+This milestone must be submitted and missing it without a reason will result in a 10% loss in your final project score.
+It will be unusual to need an excuse to miss this, and submitting the reflection should take less time than requesting to be excused.
+
 @subsection{Project Evaluation}
 The project, the compiler you write through this course, will be divided into
-approximately 9 milestone.
+approximately 10 milestone.
 At the end of the semester, your entire compiler will be thoroughly tested and
 hand-graded for design elements.
 This will constitute the entire project grade.
 
-You are required to complete the first 7 milestones to pass the course project,
-but you may choose to stop any time after completing milestone 7.
+You are required to complete the first 8 milestones to pass the course project,
+but you may choose to stop any time after completing milestone 8.
 Your maximum grade on the project will be 10% for each milestone you choose to
-complete; however, you will receive a bonus 10% on your project grade if your
+complete; however, you will receive a bonus 5% on your project grade if your
 milestone is perfect according to our rubric---it passes all of our tests
 (including private tests), and the code is well designed.
-The final 10% is all or nothing.
-This means if you complete milestone 7 perfectly, you will receive an 80% on the
-project; if you complete milestone 7 almost perfectly, you get approximately
-70%.
-If you complete milestone 8 perfectly, you will receive 90% on the project, but
-80% or less for an imperfect milestone 8.
-If you complete milestone 10 pefectly, you will receive 110% on the project, but
+The final 5% is all or nothing.
+This means if you complete milestone 8 perfectly, you will receive an 85% on the
+project; if you complete milestone 8 almost perfectly, you get approximately
+80%.
+If you complete milestone 9 perfectly, you will receive 95% on the project, but
+90% or less for an imperfect milestone 9.
+If you complete milestone 10 pefectly, you will receive 105% on the project, but
 100% or less for an imperfect milestone 10.
 
 By the end of the course, you must declare which milestone you intend to be your
