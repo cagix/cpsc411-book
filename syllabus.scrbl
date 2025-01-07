@@ -40,6 +40,10 @@ some simple imperative programming in assembly.
 )
 ]
 
+@section{Eventualities Policy - Extreme Weather, Illness, Etc}
+In the event of various eventualities, such as extreme weather, illness of both instructors, etc., we will cancel lecture and post activities and notes to be done asynchronously, and be available for Q&A on Pizza.
+We will not subject students to Zoom.
+
 @section{Prerequisites}
 A passing grade in CPSC 311.
 
