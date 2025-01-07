@@ -22,6 +22,8 @@ directory.
 This is necessary to ensure various dependencies and packages are built, and
 speeds up subsequent calls builds.
 
+You also need `graphviz` installed and `dot` accessible in your `PATH`.
+
 After a major update to the book, run `raco pkg remove cpsc411-book; raco pkg
 install` from this directory again.
 
