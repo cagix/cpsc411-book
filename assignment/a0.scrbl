@@ -96,8 +96,10 @@ The remote machines have Racket 8.15 installed.
 To access the v8.15 Racket, add @tt{/home/c/cs-411/racket-v8-15/bin} to your path.
 Remember that you must prepend this to the path, in order for this version to
 take precedence.
-For example, type this in a shell or add it to your @tt{.bash_profile}:
+For example, type this in a shell or add it to your profile file such as @tt{.bash_profile}:
 @tt{export PATH="/home/c/cs-411/racket-v8-15/bin:$PATH"}.
+You will need to add this to a profile file, unless you want to run the command
+manually each time you connect to remote.
 
 If you want a local development environment, you can use the @tt{Dockerfile}
 found in your git repository to setup a development container that mirrors
