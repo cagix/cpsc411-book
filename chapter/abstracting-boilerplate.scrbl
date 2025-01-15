@@ -402,7 +402,8 @@ the design of an interpreter explicitly.
 @;FRAGILE LINK
 @margin-note{
 Reference implementations of all our languages are available the
-@hyperlink["cpsc411/ref-langs.html"]{Language Reference Implementations}
+@secref["CPSC_411_Infrastructure_Package"]
+@;hyperlink["cpsc411/ref-langs.html"]{Language Reference Implementations}
 }
 
 Since @tech{Paren-x64 v1} is an imperative language and does not return values,
