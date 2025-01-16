@@ -181,7 +181,6 @@ available electronic textbook may be suggested.
 (list @bold{TA} @bold{Contact Details} @bold{Office} @bold{Office Hours})
 (list "Sepehr Noorafshan" "snoora@cs.ubc.ca" "ICICS 306" "Mon 13:00--14:00; Thu 11:00--12:00")
 (list "Jasper Geer" "jgeer35@cs.ubc.ca" "ICICS 306" "Wed 14:30--15:30; Fri 14:00--15:00")
-(list "Justice Sefas" "jsefas@cs.ubc.ca" "ICICS 304" "Tue 10:00--11:00; Wed 11:00--12:00")
 )
 ]
 
