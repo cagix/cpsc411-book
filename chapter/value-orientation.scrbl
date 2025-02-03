@@ -524,8 +524,10 @@ equivalent:
                     (+ x.1 y.2))])))
 ]
 
-However, the apparently similar @tech{Imp-mf-lang v3} programs are not, since
-@imp-mf-lang-v3[set!]s are required to happen in-order:
+However, the apparently similar @tech{Imp-mf-lang v3} programs are not
+necessarily equal, since @imp-mf-lang-v3[set!]s modify global state.
+The following two @imp-mf-lang-v3[tail]s are not necessarily equal, if any
+other part of the program relies on @imp-mf-lang-v3[x.1] or @imp-mf-lang-v3[y.2].
 @tabular[
 #:sep @hspace[3]
 #:column-properties '(left center right)
@@ -547,9 +549,9 @@ However, the apparently similar @tech{Imp-mf-lang v3} programs are not, since
                          (+ x.1 y.2))])))
 ]
 
-This means we can implement optimizations over @tech{Values-unique-lang v3} that
-are not possible in @tech{Imp-mf-lang v3}, although no such optimizations are
-apparent yet.
+This means we can easily implement optimizations over @tech{Values-unique-lang v3} that
+are not possible or are difficult in @tech{Imp-mf-lang v3}, although no such
+optimizations are apparent yet.
 
 @nested[#:style 'inset
 @defproc[(optimize-let-bindings (p Values-unique-lang-v3?))
