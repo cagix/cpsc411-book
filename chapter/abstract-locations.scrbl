@@ -84,7 +84,7 @@ L9 -> L11 [label = "interp-paren-x64"];
 @section{Preface: What's wrong with our language?}
 In the last chapter, we designed our first language, @ch-bp-tech{Paren-x64 v1}, and
 wrote our first compiler to implement it.
-This language introduces the barest, although still very useful,
+This language introduces the barest, although still useful,
 abstraction---freedom from boilerplate.
 @ch-bp-tech{Paren-x64 v1} abstracts away from the boilerplate of @ch1-tech{x64}, and
 details of exactly how to pass a value to the operating system.
@@ -113,7 +113,7 @@ locations} to @tech{physical locations}.
 
 We also need to design a new language, and some translations, that enable
 instructions to work over @tech{abstract locations}, even though @ch1-tech{x64}
-restricts which kinds of @tech{physical locations} instructions can use.
+restricts what kinds of @tech{physical locations} instructions can use.
 
 @section{Designing a Source language}
 When designing a new abstraction, I often start by reading and writing some
@@ -182,7 +182,7 @@ indicates that this operand is accessing 64 bits at a time.
 @margin-note{
 "Word" normally means the unit of addressing memory---64 bits in our case.
 Unfortunately, in the past, the word size was different.
-In order to avoid backwards incompatibilty changes, tools that use @tt{WORD} as
+To avoid backwards incompatible changes, tools that use @tt{WORD} as
 a keyword, like @tt{nasm}, didn't want to change it's meaning.
 Instead, the keyword @tt{WORD} means 16 bits, not the word size, and prefixes
 give us multiple of that notion of @tt{WORD}.
@@ -197,7 +197,7 @@ instruction @tt{mov rax, QWORD [rbp - 0]}.
 
 Note that a @tt{mov} instruction to an address can only move 32-bit integer
 literals.
-@tt{mov [rbp + 0], 9223372036854775807} is invalid; instead, the interger would
+@tt{mov [rbp + 0], 9223372036854775807} is invalid; instead, the integer would
 need to be moved into a register, first, as in:
 @;
 @verbatim{
@@ -273,7 +273,7 @@ register, by changing the value of @racket[current-frame-base-pointer-register],
 among other parameters.
 If our language definitions were sufficiently parameterized, few if any compiler
 passes would need to differ between target machines.
-This language is not suffiently abstract yet, but using parameterized languages
+This language is not sufficiently abstract yet, but using parameterized languages
 in this way is a common tool we will use.
 }
 
@@ -411,10 +411,10 @@ each instruction takes as an operand.
 Our instructions in @tech{Paren x64-v2} are restricted by @ch1-tech{x64}.
 For example, binary operations must use a register as their first operand.
 
-We can create a new language which allows the user to ignore the differences
+We can create a new language that allows the user to ignore the differences
 between @tech{physical locations}, enabling @emph{any} instruction to work on
 any kind of @tech{physical locations}.
-This way, the language is responsible for managing these annoying details
+This way, the language handles managing these annoying details
 instead of the programmer.
 
 We do this by defining @deftech{Para-asm-lang v2} (@racket[para-asm-lang-v2]), a kind of
@@ -454,7 +454,7 @@ Notice that two registers, @para-asm-lang-v2[r10], and @para-asm-lang-v2[r11], h
 removed from @para-asm-lang-v2[reg].
 @tech{Para-asm-lang v2} assumes control of these registers, forbidding the
 programmer from using them directly.
-Instead, the language implementation will make use of this when compiling to
+Instead, the language implementation will use this when compiling to
 @tech{Paren-x64 v2}.
 These auxiliary registers are defined by the parameter
 @racket[current-auxiliary-registers].
@@ -544,7 +544,7 @@ Below, we design @deftech{Nested-asm-lang-v2} (@racket[nested-asm-lang-v2]).
 (nested-asm-lang-v2)
 ]
 
-We add a @para-asm-lang-v2[tail] production which loosely corresponds to the
+We add a @para-asm-lang-v2[tail] production that loosely corresponds to the
 top-level program from @tech{Para-asm-lang v2}.
 However, these can be nested, before eventually ending in a @nested-asm-lang-v2[halt]
 instruction.
@@ -651,7 +651,7 @@ particularly efficient.
 The proper list representation uses strictly more memory than necessary, and
 does not support random access.
 We could improve it by using improper lists, such as @racket[((key . value))], or
-perhaps a a hash table.
+perhaps a hash table.
 However, this representation is simpler to read and write in program text.
 }
 
@@ -718,7 +718,7 @@ The @asm-lang-v2/assignments[assignment] @tech{info field} records a mapping
 from each @tech{abstract location} to some @tech{physical location}.
 The language is more general than our implementation strategy; we allow an
 @tech{abstract location} to be assigned to any valid @tech{physical location},
-including registers, to permit future optimizations or hand-written code.
+including registers, to permit future optimizations or handwritten code.
 
 @nested[#:style 'inset
 @defproc[(assign-fvars (p asm-lang-v2/locals?))

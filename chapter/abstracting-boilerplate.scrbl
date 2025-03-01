@@ -133,7 +133,7 @@ mov rax, r9
 }
 
 And, in our desired language, combining these would be well defined, such as in
-the following example, without ever referring to the boilerplate requried by
+the following example, without ever referring to the boilerplate required by
 @tt{nasm}.
 @verbatim{
 ;; Program 3, by combining Program 1 and Program 2
@@ -153,7 +153,7 @@ then there exists @racket[(p-append _p_1 _p_2)] (for some definition of
 @racket[p-append]) which first executes the instructions in @metavar{p_1} and then
 executes the instructions in @metavar{p_2}.
 
-Below, we select the subset of @ch1-tech{x64} instructions we plan to suppport
+Below, we select the subset of @ch1-tech{x64} instructions we plan to support
 in our @tech{compiler}, but note that the abstraction of @tech{instruction
 sequences} applies to all @ch1-tech{x64} instructions.
 
@@ -162,7 +162,7 @@ sequences} applies to all @ch1-tech{x64} instructions.
 @item{@tt{mov @metavar{triv}, @metavar{triv}}
 
 This string represents the move instruction, which moves a value from one
-location to another, or moves a value into a locaction.
+location to another, or moves a value into a location.
 
 @ch1-tech{x64} imposes further restrictions on @tt{mov}
 (remember---@ch1-tech{x64} @emph{is}, we must not ask why).
@@ -252,8 +252,8 @@ Before we can begin compiling, we need to define what an @tech{instruction
 sequence} means, independent of how it is implemented.
 Otherwise, we would not know whether we are compiling them correctly.
 
-We address both of these problems next by designing a @tech{source language}
-that captures the meaning of @tech{instruction sequences}, for our choosen
+We address both problems next by designing a @tech{source language}
+that captures the meaning of @tech{instruction sequences}, for our chosen
 subset of @ch1-tech{x64}, and choosing a new representation of programs that we
 will use for the rest of this book.
 @;The final result of the @tech{instruction sequence} is the value of some
@@ -267,8 +267,7 @@ Our next step is to capture this abstraction in its own language.
 When defining languages, we start by defining their abstract syntax via an
 eBNF grammar, such as the one below.
 When we described @tech{instruction sequences}, we described them in terms of
-the concrete syntax of @ch1-tech{x64} and strings, but this syntax is not
-convenient for a compiler to manipulate.
+the concrete syntax of @ch1-tech{x64} and strings, but this syntax is inconvenient for a compiler to manipulate.
 Concrete syntax often contains irrelevant details that are useful for human
 programmers, but irrelevant to a machine.
 For example, strings are difficult to work with as they lack structure for
@@ -321,8 +320,8 @@ Our abstract syntax makes more clear that the arithmetic operations are actually
 a combination of an arithmetic operation and an operation that changes state.
 The instruction @tt{add @metavar{reg}, @metavar{integer}} is represented
 @paren-x64-v1[(set! reg (+ reg integer))].
-Note that this duplicates the register in the syntax, and the two occurences
-must be the same in order to correspond to a valid @ch1-tech{x64} instruction.
+Note that this duplicates the register in the syntax, and the two occurrences
+must be the same to correspond to a valid @ch1-tech{x64} instruction.
 
 Some restrictions from @ch1-tech{x64} are not apparent in the definition of the
 grammar.
@@ -384,7 +383,7 @@ that grammar separate from how it is compiled.
 This is for two reasons.
 First, optimizations depend on when various programs in a language are
 equivalent.
-We need to understand the language in order to understand when programs are
+We need to understand the language to understand when programs are
 equivalent.
 Second, we cannot know whether the compiler is correct if we do not know
 the meaning of programs before they are compiled.
@@ -535,7 +534,7 @@ valid---it only transforms the @emph{type}, or interpretation, of the data.
 
 You could view @racket[check-paren-x64] as a type checker.
 In this view, it checks for a single type: @emph{The-Paren-x64-Type}, which
-every valid instruction has, and which has quite simple typing rules.
+every valid instruction has, and which has simple typing rules.
 @racket[check-paren-x64] checks that the input program is following the typing
 disciplines of the language (which aren't very restrictive).
 
@@ -566,7 +565,7 @@ program.}
 We split this into two separate functions to enable separation of concerns.
 We always want our syntax to be valid, but because @tech{Paren-x64 v1} will
 serve as a target language, we may not always want to enforce that registers are
-provabably initialized.
+provably initialized.
 For example, the language may evolve to the point where checking this will be
 undecidable, and source languages will be responsible for enforcing the guarantee
 instead.
@@ -646,7 +645,7 @@ program or raises an error with a descriptive error message.
 
 In these examples, the reference implementation raises contract errors when the
 input is invalid.
-The reference implementation uses contracts on each and every pass to detect
+The reference implementation uses contracts on every pass to detect
 invalid input and output.
 These errors are separate from the errors raised by the validator.
 
@@ -677,7 +676,7 @@ of the starting label and (2) the run-time system, which implements our
 convention for the meaning of @tech{instruction sequences}.
 
 We design our compiler as a series of compiler passes along these natural lines
-in order to separate concerns as much as possible.
+to separate concerns as much as possible.
 First, we translate from @tech{Paren-x64 v1} into the string representation of
 @tech{instruction sequences}.
 Then, we introduce the run-time system.
