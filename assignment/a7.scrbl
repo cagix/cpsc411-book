@@ -96,7 +96,7 @@ See @racketmodname[cpsc411/compiler-lib], which defines some of these.}
 @exercise{Design and implement the function @racket[remove-complex-opera*].
 
 If you follow the template for the @emph{target} grammar, rather than the
-source, similar to the design of validation passes, you can avoiding generating
+source, similar to the design of validation passes, you can avoid generating
 unnecessary auxiliary variables.
 This approach is simplified if you use a procedural accumulator (a continuation) for
 helpers that @emph{might} need to generate auxiliary bindings.

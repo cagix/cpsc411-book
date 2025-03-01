@@ -226,4 +226,4 @@ You shouldn't assume that the @racket[current-frame-base-pointer-register] is
 @exercise{Modify @racket[patch-instructions] to support instructions with
 @para-asm-lang-v6[addr]s instead of @nested-asm-lang-fvars-v6[fvars].}
 
-@exercise{Extend @racket[generate-x64] to support the the new @paren-x64-v6[binop].}
+@exercise{Extend @racket[generate-x64] to support the new @paren-x64-v6[binop].}

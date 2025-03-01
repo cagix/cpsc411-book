@@ -210,8 +210,8 @@ These exercises are optional, but if you complete them, you'll be able to use
 them when debugging your compiler, by comparing the results of a compiled
 program to the result of interpreting it.
 
-@todo{Add a separate chapter on validator, interpreters, etc, their use in
-intermediate languages, and source langauges.}
+@todo{Add a separate chapter on validator, interpreters, etc., their use in
+intermediate languages, and source languages.}
 
 @exercise{Redesign and extend the implementation of @racket[check-paren-x64].
 You should be able to modify your validator for the previous

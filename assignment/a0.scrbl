@@ -102,13 +102,13 @@ You will need to add this to a profile file, unless you want to run the command
 manually each time you connect to remote.
 
 If you want a local development environment, you can use the @tt{Dockerfile}
-found in your git repository to setup a development container that mirrors
+found in your git repository to set up a development container that mirrors
 @url{remote.students.cs.ubc.ca}.
 This will install a container with all the appropriate build tools and version.
 We recommend editing the compiler assignment files in the host machine,
 mounting them in the Docker container, and running tests in the container.
 You can create a new image using @tt{docker image build -t cpsc411 .} from your
-git repostory with the @tt{Dockerfile}.
+git repository with the @tt{Dockerfile}.
 Assuming your compilers assignments are stored in the path
 @tt{~/workspace/}, you can launch a new container with access to your
 assignments via @tt{docker run -i -t -v ~/workspace:/app/workspace cpsc411}.
@@ -116,7 +116,7 @@ You can use docker compose via @tt{docker-compose run cpsc411}, which should
 automate all of the above.
 
 Whichever you choose, the following exercises will make sure your machine is
-setup and working properly.
+set up and working properly.
 
 First, let's ensure Racket is installed properly and the right version.
 You will need @exec{racket} version 8.15 or higher.
@@ -175,7 +175,7 @@ exit:
 @code{120} as the exit code.}
 
 
-Instead of compiling manully using shell commands, we can compile and execute a
+Instead of compiling manually using shell commands, we can compile and execute a
 file from Racket using @racket[system] or @racket[system/exit-code] to make
 calls to command line programs from Racket.
 This is how the last pass of the compiler will translate your code into an
@@ -222,7 +222,7 @@ You should see a lot of files run, followed by @tt{25 tests passed}.
 @item{x86_64 cheat sheet: @url{https://www.cs.uaf.edu/2017/fall/cs301/reference/x86_64.html}}
 @item{x86_64 instruction reference: @url{https://www.felixcloutier.com/x86/}}
 @item{Linux syscall reference: @url{https://syscalls.kernelgrok.com/}}
-@item{MacOS BSD syscall reference: @url{https://sigsegv.pl/osx-bsd-syscalls/}}
+@item{macOS BSD syscall reference: @url{https://sigsegv.pl/osx-bsd-syscalls/}}
 @item{Online NASM explorer: @url{https://godbolt.org/z/0mA2AE}}
 @item{Windows Linker: @url{http://www.godevtool.com/Golink.zip}}
 @item{Windows NASM: @url{https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/win64/nasm-2.14.02-win64.zip}}

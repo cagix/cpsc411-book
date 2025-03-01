@@ -31,7 +31,7 @@
 The goal of this assignment is to introduce memory allocation and structured
 data.
 We will add cons pairs and vectors.
-We will extend out tagged object representation to distinguished these data
+We will extend our tagged object representation to distinguish these data
 types dynamically.
 
 This assignment is due @(due 'a8).
