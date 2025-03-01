@@ -44,7 +44,7 @@
     "toolchain",
     "uniquify"
   ],
-  "language": "en-US",
+  "language": "en-CA",
   "rules": {
     "casing": true,
     "colloquialisms": true,
