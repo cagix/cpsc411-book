@@ -104,7 +104,7 @@ remain the same with some additional suffix added to the tag, akin to semantic
 versioning.
 }
 @section{Designing an Abstraction}
-Our current abstraction boundary, @ie, our current language, is @ch1-tech{x64}.
+Our current abstraction boundary, @ie our current language, is @ch1-tech{x64}.
 So we start by asking: what's wrong with @ch1-tech{x64}?
 
 There is a lot wrong with @ch1-tech{x64}, but we'll start with one problem that
@@ -735,9 +735,9 @@ The @deftech{run-time system} provides all run-time support required by the
 language but that that is not provided by the underlying machine.
 Exactly what this run-time support is depends on the language.
 Typically, the language run-time provides memory allocation and deallocation,
-initialization of the process environment such as the stack, handles returning
-values to the user, and provides any built-in procedures that all programs in
-the language can expect to use.
+provides initialization of the process environment such as the stack, handles
+returning values to the user, and provides any built-in procedures that all
+programs in the language can expect to use.
 For @tech{Paren-x64 v1}, the only run-time support we require is returning the
 final value to the operating system and exiting.
 

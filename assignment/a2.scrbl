@@ -166,8 +166,8 @@ For working with sets, you may want to use @secref["sets" #:doc '(lib
 "scribblings/reference/reference.scrbl")].
 }
 
-@exercise{Design and implement @racket[assign-fvars] assign @ch2-tech{abstract
-locations} to @ch2-tech{physical location}.
+@exercise{Design and implement @racket[assign-fvars] to assign
+@ch2-tech{abstract locations} to @ch2-tech{physical locations}.
 }
 
 @exercise{Design and implement @racket[replace-locations] to replace

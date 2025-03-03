@@ -414,7 +414,7 @@ For example, binary operations must use a register as their first operand.
 We can create a new language that allows the user to ignore the differences
 between @tech{physical locations}, enabling @emph{any} instruction to work on
 any kind of @tech{physical locations}.
-This way, the language handles managing these annoying details
+This way, the language is responsible for managing these annoying details
 instead of the programmer.
 
 We do this by defining @deftech{Para-asm-lang v2} (@racket[para-asm-lang-v2]), a kind of
@@ -556,7 +556,7 @@ This essentially allows us to copy and paste some @ch-bp-tech{instruction
 sequence} into the middle of a program.
 
 @nested[#:style 'inset
-@defproc[(flatten-begins [p nested-asm-lang-v2]) para-asm-lang-v2]{
+@defproc[(flatten-begins [p nested-asm-lang-v2?]) para-asm-lang-v2?]{
 Flatten all nested @nested-asm-lang-v2[begin] expressions.
 }
 ]
@@ -755,7 +755,7 @@ the @tech{physical location} assigned by @racket[assign-fvars].
 @defproc[(replace-locations (p asm-lang-v2/assignments?))
           nested-asm-lang-v2?]{
 Compiles @tech{Asm-lang v2/assignments} to @tech{Nested-asm-lang v2},
-replaced each @tech{abstract location} with its assigned @tech{physical
+replacing each @tech{abstract location} with its assigned @tech{physical
 location} from the @asm-lang-v2/assignments[assignment] @tech{info field}.
 }
 
