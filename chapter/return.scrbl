@@ -697,8 +697,8 @@ We extend @ch5-tech{Proc-imp-cmf-lang v5} with our new abstractions, including
 We also add a definition @proc-imp-cmf-lang-v6[entry] designating the top-level
 tail used as the @tech{entry point} for each @ch5-tech{procedure} and for the
 module as a whole.
-There is no syntactic distinction between what expression appear in @proc-imp-cmf-lang-v6[entry] vs 
-@prc-imp-cmf-lang-v6[tail] position, but making a semantic distinction
+There is no syntactic distinction between what expression appear in @proc-imp-cmf-lang-v6[entry] vs
+@proc-imp-cmf-lang-v6[tail] position, but making a semantic distinction
 syntactic through the new non-terminal, we simplify our implementation of the
 @ch5-tech{calling convention} to support @tech{return}.
 
