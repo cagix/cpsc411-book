@@ -344,7 +344,7 @@ to it when finished.
 This happens either as the body of a @ch5-tech{procedure}, or as the initial
 @proc-imp-cmf-lang-v6[tail] in a module @proc-imp-cmf-lang-v6[(module tail)].
 @bettergrammar*-ndiff[
-#:labels ("Proc-imp-mf-lang v6 (excerpt)")
+#:labels ("Proc-imp-cmf-lang v6 (excerpt)")
 (#:include (p tail entry) proc-imp-cmf-lang-v6)
 ]
 
@@ -668,13 +668,6 @@ transform lexical binding into sequential imperative assignments.
 (imp-mf-lang-v6)
 ]
 
-Note that this language contains a definition @proc-imp-cmf-lang-v6[entry]
-designating the top-level tail used as the @tech{entry point} for each
-@ch5-tech{procedure} and for the module as a whole.
-There is no syntactic distinction, but making a semantic distinction will
-simplify our implementation of the @ch5-tech{calling convention} to support
-@tech{return}.
-
 @todo{Kent adds non-tail calls in effect context in this assignment. We could
 add it here for future-proofing, but probably not important to do so. It's not
 exposed in the surface yet.}
@@ -696,11 +689,18 @@ typeset with differences compared to @ch5-tech{Proc-imp-cmf-lang v5}.
 #:labels ("Diff vs v5" "Diff vs Source" "Proc-imp-cmf-lang v6")
 (proc-imp-cmf-lang-v5 proc-imp-cmf-lang-v6)
 (imp-mf-lang-v5 proc-imp-cmf-lang-v6)
-(imp-mf-lang-v6)
+(proc-imp-cmf-lang-v6)
 ]
 
-We simply extend @ch5-tech{Proc-imp-cmf-lang v5} with our new abstractions, including
+We extend @ch5-tech{Proc-imp-cmf-lang v5} with our new abstractions, including
 @tech{non-tail calls}.
+We also add a definition @proc-imp-cmf-lang-v6[entry] designating the top-level
+tail used as the @tech{entry point} for each @ch5-tech{procedure} and for the
+module as a whole.
+There is no syntactic distinction between what expression appear in @proc-imp-cmf-lang-v6[entry] vs 
+@prc-imp-cmf-lang-v6[tail] position, but making a semantic distinction
+syntactic through the new non-terminal, we simplify our implementation of the
+@ch5-tech{calling convention} to support @tech{return}.
 
 @nested[#:style 'inset
 @defproc[(normalize-bind (p imp-mf-lang-v6?))
