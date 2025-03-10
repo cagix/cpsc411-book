@@ -394,7 +394,7 @@ tag @code{#b110}, or as two separate @tech{secondary tags} (with no payload)
 @code{#b00001110} and @code{#b00000110}.
 I typically think in the the latter interpretation, where we represent
 @exprs-lang-v7[#t] and @exprs-lang-v7[#f] as separate data types, whose tags are
-@code{#b110} (@racket[#b110]) and @code{#b1110} (@racket[#b1110]).
+@code{#b1110} (@racket[#b1110]) and @code{#b110} (@racket[#b110]).
 
 To implement tag checking for booleans, we use the mask @code{#b11110111}
 (@racket[#b11110111]), and compare to the tag @code{#b110}. This succeed
