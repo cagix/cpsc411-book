@@ -462,7 +462,7 @@ only give @exprs-lang-v8[primops], rather than distinguishing
 @exprs-lang-v8[unops], @exprs-lang-v8[binops], and so on, so we can easily group
 like primops with like.
 
-As usual, we first task is to @racket[uniquify].
+As usual, our first task is to @racket[uniquify].
 Below we define the target language, @deftech{Exprs-unique-lang v8}.
 
 @bettergrammar*-ndiff[
