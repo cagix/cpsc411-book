@@ -429,7 +429,7 @@ Garbage collection is tricky to implement so we avoid it for now to focus on
 implement structured data.
 
 For a quick introduction to garbage collection, see this short video
-@url{https://twitter.com/TartanLlama/status/1296413612907663361?s=20}.
+@url{https://mastodon.social/@"@"TartanLlama/109643267561353728}.
 }
 
 To implement our allocation-only strategy, we need the run-time system to
